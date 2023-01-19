@@ -14,7 +14,7 @@ paypal.configure({
 const app = express();
 
 app.get("/", (req, res) => res.sendFile(__dirname + "/views/index.html"));
-
+console.log("hiiii");
 app.post("/pay", (req, res) => {
   const create_payment_json = {
     intent: "sale",
